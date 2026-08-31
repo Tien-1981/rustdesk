@@ -554,7 +554,7 @@ class _GeneralState extends State<_General> {
           context,
           'Auto update',
           kOptionAllowAutoUpdate,
-          isServer: true,
+          isServer: false,
         ),
       if (isWindows && !outgoingOnly)
         _OptionCheckBox(
@@ -2458,7 +2458,7 @@ class _AboutState extends State<_About> {
                   ).marginSymmetric(vertical: 4.0)),
               InkWell(
                   onTap: () {
-                    launchUrlString('https://rustdesk.com');
+                    launchUrlString('https://www.attnerp.com.tw');
                   },
                   child: Text(
                     translate('Website'),
