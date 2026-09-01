@@ -542,20 +542,7 @@ class _GeneralState extends State<_General> {
             ),
           ),
       ],
-    //  if (!isWeb && !bind.isCustomClient())
-    //    _OptionCheckBox(
-    //      context,
-    //      'Check for software update on startup',
-    //      kOptionEnableCheckUpdate,
-    //      isServer: false,
-    //    ),
-    //  if (showAutoUpdate)
-    //    _OptionCheckBox(
-    //      context,
-    //      'Auto update',
-    //      kOptionAllowAutoUpdate,
-    //      isServer: false,
-    //    ),
+	  
       if (isWindows && !outgoingOnly)
         _OptionCheckBox(
           context,
@@ -2441,21 +2428,11 @@ class _AboutState extends State<_About> {
               SelectionArea(
                   child: Text('${translate('Build Date')}: $buildDate')
                       .marginSymmetric(vertical: 4.0)),
-             // if (!isWeb)
-             //   SelectionArea(
-             //       child: Text('${translate('Fingerprint')}: $fingerprint')
-             //           .marginSymmetric(vertical: 4.0)),
+
               SelectionArea(
                   child: Text('${translate('ID')}: $myId')
                       .marginSymmetric(vertical: 4.0)),
-            //  InkWell(
-            //      onTap: () {
-            //        launchUrlString('https://rustdesk.com/privacy.html');
-            //      },
-            //      child: Text(
-            //        translate('Privacy Statement'),
-            //        style: linkStyle,
-            //     ).marginSymmetric(vertical: 4.0)),
+
               InkWell(
                   onTap: () {
                     launchUrlString('https://www.attnerp.com.tw');
